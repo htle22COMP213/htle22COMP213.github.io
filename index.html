@@ -1,0 +1,180 @@
+<!-- COMP213-011 (Assignment 1) -->
+<!-- Created by Henry Tin Le -->
+
+<!--
+    Create an HTML document called index.html that will be used as your home page on studentweb.
+
+(80% of mark – already built as a class demo during week 01 and 02) The page should include the following required features:
+-	a picture at the top of the page to create a ‘banner area’ for your page.
+-	a title line (header line) to show the course number and name and the current semester.
+-	a smaller title line to show your name and student number.
+-	a bulleted list of at least 6 favorite activities to introduce yourself to the visitors of your home page.
+-	a copyright line at the bottom of the page to display in small characters ‘Copyright’ and your name, student number, course, semester.
+-	use the Arial or Verdana font for the entire page.
+-	include in your document an HTML comment (embedded in your HTML code) showing your name and student number.
+
+(20% of mark) You are encouraged to enhance your home page by:
+-	adding additional content (e.g. extra pictures, additional information about yourself or your hobbies)
+-	refining the design (e.g. colored fonts, different font families for the titles, a background color, etc.) 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--HOMEPAGE NAME-->
+    <title> Assignment 1 </title>
+<!--BACKGROUND IMAGE = photoshopped from scratch-->  
+    <style>
+        html {
+            background: url(Background.jpg) no-repeat center fixed;
+            background-size: cover;
+        }
+    </style>
+<!--ORANGE BOX-->
+    <style> 
+        .box1 { 
+            border: 3px outset #ab6c6c59;
+            background-color: #ac660abe;
+            border-radius: 30px;
+            text-align: center;
+            width: 700px;
+            margin: auto
+        }
+    </style>
+<!--WHITE BOX-->
+    <style>
+        .box2 {
+            border: 3px outset #dddbdb9c;
+            background-color: #cacac78f;
+            text-align: left;
+            width: 400px;
+            display:inline-block;
+        }
+    </style>
+<!--DOTS-->
+    <style>
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #cacac7cd;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .dot2 {
+            height: 50px;
+            width: 50px;
+            background-color: #cacac7;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>  
+<!--AVATAR BOX = IMG made from Android app "Anime Face Maker GO"-->
+    <style>        
+        .circle {
+            background-image: url(FaceMakerGO1.jpg);
+            background-size: 170px;
+            width: 200px;
+            height: 170px;
+            border: 3px solid #7b7979;
+            border-radius: 60px 100px 100px 30px;
+            display:inline-block;
+        } 
+    </style>
+    <style>
+         .wrap {
+                text-align: center;
+        }   
+    </style> 
+<!--BOX TEXT ALIGNMENT-->
+    <style>
+        h2 {
+        text-align: center;
+        }    
+        h3 {
+        text-align: center;
+        }
+    </style>
+<!--BANNER-->
+    <style>
+        .img {
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+<!--PICTURE BANNER-->
+<!--IMAGE CREDIT to https://www.freepik.com/free-photo/autumn-arrangement-with-leaves-hot-beverage_2580046.htm#query=fall%20banner&position=1&from_view=search-->
+    <div class="img">
+    <img src="Banner.jpg" width="1100" height="320">
+    </div>
+
+    <br>
+<!--BORDER-->
+    <hr style="border-style: ridge; border-color:#5c595987; border-width:1px;">
+<!--TITLE LINE (HEADER LINE): course name, number, and current semester-->
+    <div style="color:#201e1e">
+        <h2 style="font-family: Verdana">COMP213 (SEC. 011) - Web Interface Design (Fall 2022)</h2>
+    </div>
+<!--SMALLER TITLE LINE: student name and number-->
+    <div style="color:#688692">
+        <h3 style="font-family: Verdana">by Henry Tin Le</h3>
+    </div>
+
+<!--BORDER-->
+    <hr style="border-style: ridge; border-color:#5c595987; border-width:1px;">
+
+<!--GREETINGS-->
+ <div class="box1">
+    <div style="color:#ffffffb6">
+     <p style="font-family: Verdana">
+     <p><font size="6"><b>Happy Autumn!</font></p>
+     <p><font size="5">Welcome to My Home Page</font></p>
+     <p><font size="4">I am a student at Centennial College.<br>
+        My program of study is Software Engineering Technology.<br>
+        This is my first HTML web design so excuse the amateur work!<br><br>
+        Fall is one my favorite season, I enjoy seeing the vibrant color changes of the leaves. <br>
+        The weather is cooler and it's that time of the year to see pumpkin themes.</font></p><br><br></p>
+    </div>
+ </div>
+<div class="wrap">
+    <br>
+    <!--BULLETED LIST: 6 favorites-->
+    <div class="box2">
+        <div style="color:#e45e10b2">
+            <p style="font-family: Verdana"><b>&nbsp;&nbsp;&nbsp;&nbsp;Some Things I do in my Free Time:</b></p>
+            <ul>
+                <li>Arts/Crafts</li>
+                <li>Cycling</li>
+                <li>Cooking</li>
+                <li>Browsing</li>
+                <li>Watching Movies/TV Shows</li>
+                <li>Sleeping</li>
+            </ul>
+        </div>
+    </div>
+    <span class="dot"></span>
+    <span class="dot2"></span>
+    <div class="circle"></div>
+</div>
+<br>
+<!--BORDER-->
+    <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px;">
+<!--NEXT PAGE-->
+    <div class="wrap"><h3><a href="assignment2.html">Go to Assignment 2 &#8594;</a></h3></div>
+<!--BORDER-->
+    <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px;">
+<!--COPYRIGHT WITH NAME, COURSE, SEMESTER-->
+    <div class="wrap">
+    <h5 style="color:rgb(111, 111, 111)">&copy; Copyright by Henry Tin Le, &nbsp; COMP213-011 - Fall 2022</h5>
+    </div>
+
+</body>
+
+</html>
