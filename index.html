@@ -23,17 +23,13 @@
 <html lang="en">
 
 <head>
-<!--HOMEPAGE NAME-->
-    <title> Assignment 1 </title>
+    <title> Henry's Homepage </title>
 <!--BACKGROUND IMAGE = photoshopped from scratch-->  
     <style>
         html {
             background: url(Background.jpg) no-repeat center fixed;
             background-size: cover;
         }
-    </style>
-<!--ORANGE BOX-->
-    <style> 
         .box1 { 
             border: 3px outset #ab6c6c59;
             background-color: #ac660abe;
@@ -42,9 +38,6 @@
             width: 700px;
             margin: auto
         }
-    </style>
-<!--WHITE BOX-->
-    <style>
         .box2 {
             border: 3px outset #dddbdb9c;
             background-color: #cacac78f;
@@ -52,9 +45,6 @@
             width: 400px;
             display:inline-block;
         }
-    </style>
-<!--DOTS-->
-    <style>
         .dot {
             height: 25px;
             width: 25px;
@@ -68,10 +58,7 @@
             background-color: #cacac7;
             border-radius: 50%;
             display: inline-block;
-        }
-    </style>  
-<!--AVATAR BOX = IMG made from Android app "Anime Face Maker GO"-->
-    <style>        
+        }      
         .circle {
             background-image: url(FaceMakerGO1.jpg);
             background-size: 170px;
@@ -81,27 +68,18 @@
             border-radius: 60px 100px 100px 30px;
             display:inline-block;
         } 
-    </style>
-    <style>
          .wrap {
-                text-align: center;
+            text-align: center;
         }   
-    </style> 
-<!--BOX TEXT ALIGNMENT-->
-    <style>
         h2 {
-        text-align: center;
+            text-align: center;
         }    
         h3 {
-        text-align: center;
+            text-align: center;
         }
-    </style>
-<!--BANNER-->
-    <style>
         .img {
             margin-left: auto;
             margin-right: auto;
-            align-items: center;
             text-align: center;
         }
     </style>
@@ -109,71 +87,62 @@
 
 
 <body>
-<!--PICTURE BANNER-->
-<!--IMAGE CREDIT to https://www.freepik.com/free-photo/autumn-arrangement-with-leaves-hot-beverage_2580046.htm#query=fall%20banner&position=1&from_view=search-->
+  <header>  
+    <!--PICTURE BANNER, IMAGE CREDIT to https://www.freepik.com/free-photo/autumn-arrangement-with-leaves-hot-beverage_2580046.htm#query=fall%20banner&position=1&from_view=search-->
     <div class="img">
-    <img src="Banner.jpg" width="1100" height="320">
+      <img src="Banner.jpg" width="1100" height="320">
     </div>
-
-    <br>
-<!--BORDER-->
+    <!--BORDER-->
     <hr style="border-style: ridge; border-color:#5c595987; border-width:1px;">
-<!--TITLE LINE (HEADER LINE): course name, number, and current semester-->
-    <div style="color:#201e1e">
-        <h2 style="font-family: Verdana">COMP213 (SEC. 011) - Web Interface Design (Fall 2022)</h2>
-    </div>
-<!--SMALLER TITLE LINE: student name and number-->
-    <div style="color:#688692">
-        <h3 style="font-family: Verdana">by Henry Tin Le</h3>
-    </div>
-
-<!--BORDER-->
+    <!--TITLE LINE (HEADER LINE): course name, number, and current semester-->
+    <h2 style="font-family: Verdana; color:#201e1e">COMP213 (SEC. 011) - Web Interface Design (Fall 2022)</h2>
+    <!--SMALLER TITLE LINE: student name and number-->
+    <h3 style="font-family: Verdana; color:#688692">by Henry Tin Le</h3>
+    <!--BORDER-->
     <hr style="border-style: ridge; border-color:#5c595987; border-width:1px;">
+  </header>
+  
+  <main>
+     <div class="box1"> <!--GREETINGS-->
+         <p style="font-family: Arial; color:#ffffffb6">
+         <font size="6"><b>Happy Autumn!</font><br>
+         <font size="5">Welcome to My Home Page</font><br><br>
+         <font size="3">I am a student at Centennial College.<br>
+            My program of study is Software Engineering Technology.<br>
+            This is my first HTML web design so excuse the amateur work!<br><br>
+            Fall is one my favorite season, I enjoy seeing the vibrant color changes of the leaves. <br>
+            The weather is cooler and it's that time of the year to see pumpkin themes.</font><br><br></p>
+     </div>
+  
+     <div class="wrap"> <!--BULLETED LIST--> <br>
+       <div class="box2">
+         <div style="color:#e45e10b2">
+           <p style="font-family: Verdana"><b>&nbsp;&nbsp;&nbsp;&nbsp;Some Things I do in my Free Time:</b></p>
+           <ul>
+             <li>Arts/Crafts</li>
+             <li>Cycling</li>
+             <li>Cooking</li>
+             <li>Browsing</li>
+             <li>Watching Movies/TV Shows</li>
+             <li>Sleeping</li>
+           </ul>
+         </div>
+       </div>
+       <span class="dot"></span>
+       <span class="dot2"></span>
+       <div class="circle"></div><br>
+     </div>
+  </main>
 
-<!--GREETINGS-->
- <div class="box1">
-    <div style="color:#ffffffb6">
-     <p style="font-family: Verdana">
-     <p><font size="6"><b>Happy Autumn!</font></p>
-     <p><font size="5">Welcome to My Home Page</font></p>
-     <p><font size="4">I am a student at Centennial College.<br>
-        My program of study is Software Engineering Technology.<br>
-        This is my first HTML web design so excuse the amateur work!<br><br>
-        Fall is one my favorite season, I enjoy seeing the vibrant color changes of the leaves. <br>
-        The weather is cooler and it's that time of the year to see pumpkin themes.</font></p><br><br></p>
-    </div>
- </div>
-<div class="wrap">
-    <br>
-    <!--BULLETED LIST: 6 favorites-->
-    <div class="box2">
-        <div style="color:#e45e10b2">
-            <p style="font-family: Verdana"><b>&nbsp;&nbsp;&nbsp;&nbsp;Some Things I do in my Free Time:</b></p>
-            <ul>
-                <li>Arts/Crafts</li>
-                <li>Cycling</li>
-                <li>Cooking</li>
-                <li>Browsing</li>
-                <li>Watching Movies/TV Shows</li>
-                <li>Sleeping</li>
-            </ul>
-        </div>
-    </div>
-    <span class="dot"></span>
-    <span class="dot2"></span>
-    <div class="circle"></div>
-</div>
-<br>
-<!--BORDER-->
+  <nav>   <!--NEXT PAGE-->
     <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px;">
-<!--NEXT PAGE-->
-    <div class="wrap"><h3><a href="assignment2.html">Go to Assignment 2 &#8594;</a></h3></div>
-<!--BORDER-->
+    <h3><a href="assignment2.html">Go to Assignment 2 &#8594;</a></h3>
     <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px;">
-<!--COPYRIGHT WITH NAME, COURSE, SEMESTER-->
-    <div class="wrap">
-    <h5 style="color:rgb(111, 111, 111)">&copy; Copyright by Henry Tin Le, &nbsp; COMP213-011 - Fall 2022</h5>
-    </div>
+  </nav>
+
+  <footer> <!--COPYRIGHT WITH NAME, COURSE, SEMESTER-->
+    <h5 class="wrap" style="color:rgb(111, 111, 111)">&copy; Copyright by Henry Tin Le, Assignment 1, COMP213-011 - Fall 2022</h5>
+  </footer>
 
 </body>
 
