@@ -31,16 +31,16 @@
             background-size: cover;
         }
         .box1 { 
-            border: 3px outset #ab6c6c59;
-            background-color: #ac660abe;
-            border-radius: 30px;
+            border: 3px outset #ab6c6ce2;
+            background-color: #ac4b0abf;
+
             text-align: center;
-            width: 700px;
+            width: 940px;
             margin: auto
         }
         .box2 {
-            border: 3px outset #dddbdb9c;
-            background-color: #cacac78f;
+            border: 3px outset #dddbdbee;
+            background-color: #f8f8f8;
             text-align: left;
             width: 400px;
             display:inline-block;
@@ -48,14 +48,14 @@
         .dot {
             height: 25px;
             width: 25px;
-            background-color: #cacac7cd;
+            background-color: #d7d7d5;
             border-radius: 50%;
             display: inline-block;
         }
         .dot2 {
             height: 50px;
             width: 50px;
-            background-color: #cacac7;
+            background-color: #e5e5e3;
             border-radius: 50%;
             display: inline-block;
         }      
@@ -64,23 +64,26 @@
             background-size: 170px;
             width: 200px;
             height: 170px;
-            border: 3px solid #7b7979;
+            border: 3px solid #000000;
             border-radius: 60px 100px 100px 30px;
             display:inline-block;
-        } 
-         .wrap {
-            text-align: center;
-        }   
-        h2 {
-            text-align: center;
-        }    
-        h3 {
-            text-align: center;
-        }
+        }      
         .img {
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+        }
+        a:link, a:visited {
+        background-color: #89898968;
+        color: rgb(0, 0, 0);
+        padding: 40px 150px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+        a:hover, a:active {
+          background-color: rgb(179, 73, 3);
+          color:white
         }
     </style>
 </head>
@@ -90,20 +93,18 @@
   <header>  
     <!--PICTURE BANNER, IMAGE CREDIT to https://www.freepik.com/free-photo/autumn-arrangement-with-leaves-hot-beverage_2580046.htm#query=fall%20banner&position=1&from_view=search-->
     <div class="img">
-      <img src="Banner.jpg" width="1100" height="320">
+      <img src="Banner.jpg" width="940">
     </div>
-    <!--BORDER-->
-    <hr style="border-style: ridge; border-color:#5c595987; border-width:1px;">
     <!--TITLE LINE (HEADER LINE): course name, number, and current semester-->
-    <h2 style="font-family: Verdana; color:#201e1e">COMP213 (SEC. 011) - Web Interface Design (Fall 2022)</h2>
+    <h2 style="font-family: Verdana; color:#201e1e; text-align: center;">COMP213 (SEC. 011) - Web Interface Design (Fall 2022)</h2>
     <!--SMALLER TITLE LINE: student name and number-->
-    <h3 style="font-family: Verdana; color:#688692">by Henry Tin Le</h3>
+    <h3 style="font-family: Verdana; color:#688692; text-align: center">Created by Henry Tin Le</h3>
     <!--BORDER-->
-    <hr style="border-style: ridge; border-color:#5c595987; border-width:1px;">
+    <hr style="border-style: ridge; border-color:#5c595987; border-width:1px; width:940px">
   </header>
   
-  <main>
-     <div class="box1"> <!--GREETINGS-->
+  <main class="box1">
+     <div> <!--GREETINGS-->
          <p style="font-family: Arial; color:#ffffffb6">
          <font size="6"><b>Happy Autumn!</font><br>
          <font size="5">Welcome to My Home Page</font><br><br>
@@ -114,10 +115,10 @@
             The weather is cooler and it's that time of the year to see pumpkin themes.</font><br><br></p>
      </div>
   
-     <div class="wrap"> <!--BULLETED LIST--> <br>
+     <div> <!--BULLETED LIST--> <br>
        <div class="box2">
          <div style="color:#e45e10b2">
-           <p style="font-family: Verdana"><b>&nbsp;&nbsp;&nbsp;&nbsp;Some Things I do in my Free Time:</b></p>
+           <p style="font-family: Verdana; padding-left: 20px;"><b>Some Things I do in my Free Time:</b></p>
            <ul>
              <li>Arts/Crafts</li>
              <li>Cycling</li>
@@ -131,22 +132,22 @@
        <span class="dot"></span>
        <span class="dot2"></span>
        <div class="circle"></div><br>
-     </div>
+     </div> <br>
   </main>
 
   <nav>   <!--NEXT PAGE-->
-    <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px;">
+    <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1x; width:940px; margin-bottom: 0px">
     
     <div style="text-align:center">
-      <h3 style="display:inline-block">&#8594;&nbsp;&nbsp; <a href="assignment2.html">Assignment 2 </a></h3> &nbsp;&nbsp;
+      <h3 style="display:inline-block"><a href="assignment2.html">Assignment 2 </a></h3>
       <h3 style="display:inline-block"><a href="assignment3.html">Assignment 3 </a></h3>
     </div>
 
-    <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px;">
+    <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px; width:940px; margin-top: 0px">
   </nav>
 
   <footer> <!--COPYRIGHT WITH NAME, COURSE, SEMESTER-->
-    <h5 class="wrap" style="color:rgb(111, 111, 111)">&copy; Copyright by Henry Tin Le, Assignment 1, COMP213-011 - Fall 2022</h5>
+    <h4 style="color:rgb(111, 111, 111); text-align: center;">&copy; Copyright by Henry Tin Le, Assignment 1, COMP213-011 - Fall 2022</h5>
   </footer>
 
 </body>
