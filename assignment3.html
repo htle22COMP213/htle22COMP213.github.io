@@ -1,6 +1,33 @@
 <!-- COMP213-011 (Assignment 3) -->
 <!-- Created by Henry Tin Le -->
 
+<!--
+
+Select a product that you really like (example: a TV set, a laptop, a car, etc.)
+Find information about your favourite product on the Internet.
+Using the product information (picture, description, features, similar products, company
+that sells the product)
+
+Required Features:
+• Design the page layout to fit a 1024px screen (width:980px) and show the content centered on the screen.
+• Choose appropriate font families that look good on the screen (Hint: use a sans serif font for the main text on the page).
+• Add a banner for your page (not shown in above picture) to include a productrelated picture, 
+the product company logo hyperlinked to their website, some title text.
+• Add a hotspot map of Canada (not shown in above picture) and hyperlink 3
+provinces to the website of local distributors of the product.
+• Save the HTML page as assignment3.html.
+• When you click the “Home Page” hyperlink, redirect the browser to your home
+page (index.html) on studentweb.
+• When you click the “View Larger Picture” hyperlink, open another document called details.html, 
+that displays a detailed (larger) picture of your product and a “back” hyperlink to the product info page.
+• Create an HTML comment within your document that shows your name and student number.
+• Upload your assignment3.html and details.html documents to the studentweb server or GitHub, 
+and provide an “Assignment 3” hyperlink to it from your index page. Remember to upload the picture files to the server too.
+• Submit all files and a link to published website on eCentennial assignment 3 dropbox.
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +42,7 @@
             margin-left: auto;
             margin-right: auto;
             border-style:solid;
-            width: 940px;
+            width: 980px;
             font-family: sans-serif;
         }
         .centered {
@@ -26,18 +53,18 @@
             margin-left: auto;
             margin-right: auto;
             background-color: #010101;
-            width: 940px;
+            width: 980px;
         }
         a:link, a:visited {
-        background-color: #424242;
-        color: white;
-        padding: 15px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
+            background-color: #424242;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
         }
         a:hover, a:active {
-          background-color: rgb(26, 25, 25);
+            background-color: rgb(26, 25, 25);
         }
     </style>
   </head>
@@ -66,16 +93,21 @@
           <!--IMG CREDIT FROM https://www.bhphotovideo.com/c/product/1548392-REG/fujifilm_16652867_x_t4_mirrorless_digital_camera.html-->>
           <tr>
             <td>
-            <a href="./X-T4-BLK-FRONT.jpg" target="_blank"><img src="X-T4-BLK-FRONT.jpg" width="250"></a><br>
-            <a href="./X-T4-BLK-BACK.jpg" target="_blank"> <img src="X-T4-BLK-BACK.jpg" width="50"></a>
-            <a href="./X-T4-BLK-BACK2.jpg" target="_blank"><img src="X-T4-BLK-BACK2.jpg" width="50"></a>
-            <a href="./X-T4-BLK-BACKa.jpg" target="_blank"><img src="X-T4-BLK-BACKa.jpg" width="50"></a>
-            <a href="./X-T4-BLK-TOP.jpg" target="_blank"><img src="X-T4-BLK-TOP.jpg" width="50"></a>
+            <a href="./X-T4-BLK-FRONT.jpg" target="_blank" width="100%"><img src="X-T4-BLK-FRONT.jpg" width="250"></a><br>
+            <a href="./X-T4-BLK-BACK.jpg" target="_blank" width="100%"> <img src="X-T4-BLK-BACK.jpg" width="50"></a>
+            <a href="./X-T4-BLK-BACK2.jpg" target="_blank" width="100%"><img src="X-T4-BLK-BACK2.jpg" width="50"></a>
+            <a href="./X-T4-BLK-BACKa.jpg" target="_blank" width="100%"><img src="X-T4-BLK-BACKa.jpg" width="50"></a>
+            <a href="./X-T4-BLK-TOP.jpg" target="_blank" width="100%"><img src="X-T4-BLK-TOP.jpg" width="50"></a>
             </td>
             <td colspan="2"style="text-align:left; vertical-align:top; padding:15px">
               <p style="text-align:center;" >BLACK VERSION</p>
-              <p>FUJIFILM X-T4 is a hybrid camera that uses cutting-edge technology to excel in creating both stills and motion imagery. Free yourself from compromise and be the image maker you’ve always wanted to be. With the fourth-generation X-Trans CMOS 4 sensor, X-Processor 4, a newly developed, compact in-body image stabilization (IBIS) system, the new ETERNA Bleach Bypass Film Simulation mode, and much more, it’s time to extend your creative limits with this incredible imaging tool. </p>
-                
+              <!--Description from Amazon  https://www.amazon.ca/Fujifilm-X-T4-Mirrorless-Camera-Body/dp/B084ZTV3QK?th=1-->
+              <p>FUJIFILM X-T4 is a hybrid camera that uses cutting-edge technology to excel in creating both stills and motion 
+                imagery. Free yourself from compromise and be the image maker you’ve always wanted to be. With the fourth-generation 
+                X-Trans CMOS 4 sensor, X-Processor 4, a newly developed, compact in-body image stabilization (IBIS) system, the new 
+                ETERNA Bleach Bypass Film Simulation mode, and much more, it’s time to extend your creative limits with this incredible 
+                imaging tool. </p>
+                <!--Specification from https://www.dpreview.com/reviews/fujifilm-x-t4-review-->>
                 <p>Specification:</p>
                 <ul>
                   <li>26MP BSI CMOS sensor</li>
@@ -96,7 +128,7 @@
           <tr>
             <td>
               <img src="X-T4-SLV-FRONT.jpg" width="250">
-              <a href="./X-T4-SLV-FRONT.jpg">View Larger Image</a>
+              <a href="./details.html">View Larger Image</a>
             </td>
             <td colspan="2" style="text-align:center">SILVER VERSION</td>
           </tr>
@@ -122,9 +154,9 @@
             <td colspan="3" style="background-color:rgb(255, 255, 255)">
               <img src="canadamap.jpg" usemap="#image-map">
               <map name="image-map">
-                  <area target="" alt="Vancouver, BC" title="Vancouver, BC" href="https://goo.gl/maps/PGFmhTbWurTwQpq2A" coords="136,428,204,445,176,381,190,300,102,262,114,323,106,348,112,392" shape="poly">
-                  <area target="" alt="Banff, Alberta" title="Banff, Alberta" href="https://goo.gl/maps/8QFV96whrwA3YXrn8" coords="198,302,257,314,238,451,207,445,176,376" shape="poly">
-                  <area target="" alt="Niagara Falls, ON" title="Niagara Falls, ON" href="https://goo.gl/maps/UyHpdd3fT5E8K4DJ9" coords="551,469,515,505,489,530,498,498,508,488,468,479,454,461,428,449,412,464,369,455,365,411,402,355,433,367,452,368,460,397,484,415,505,465,530,472" shape="poly">
+                  <area target="" alt="Vancouver, BC (Kerrisdale Camera)" title="Vancouver, BC (Kerrisdale Camera)" href="https://kerrisdalecameras.com/shop/fujifilm-x-t4-mirrorless-digital-camera-body-only/b72d8c80-3966-0138-8c52-00163ecd2826?variation=2142344" coords="136,428,204,445,176,381,190,300,102,262,114,323,106,348,112,392" shape="poly">
+                  <area target="" alt="Calgary, Alberta (Visions Electronics)" title="Calgary, Alberta (Visions Electronics)" href="https://www.visions.ca/product-detail/56314/fujifilm_x_t4_26_1mp_mirrorless_digital_camera_body_only_black?categoryId=0&sku=600021579" coords="198,302,257,314,238,451,207,445,176,376" shape="poly">
+                  <area target="" alt="London, ON (Camera Canada)" title="London, ON (Camera Canada)" href="https://www.cameracanada.com/products/productDetail.aspx?pid=600021579" coords="551,469,515,505,489,530,498,498,508,488,468,479,454,461,428,449,412,464,369,455,365,411,402,355,433,367,452,368,460,397,484,415,505,465,530,472" shape="poly">
               </map>
             </td>
           </tr>
@@ -133,7 +165,7 @@
     
      <!--IMG CREDIT = https://www.vectorstock.com/royalty-free-vector/canada-map-provinces-and-territories-vector-35577262-->
      <footer>
-      <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px; width:940px;">
+      <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px; width:980px;">
       <h4 class="centered" style="color:white; font-family: 'Times New Roman';font-weight: lighter; margin-top: 5px;">&copy; Copyright by Henry Tin Le, Assignment 3 - COMP213-011 (Fall 2022)</h4>
      </footer>
   
