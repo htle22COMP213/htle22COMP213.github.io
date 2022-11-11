@@ -1,87 +1,41 @@
 <!-- COMP213-011 (Assignment 2) -->
 <!-- Created by Henry Tin Le -->
 
-<!--
-
-Research the topic of protected areas (conservation areas) around the world 
-and create a webpage about this topic. (https://www.iucn.org/theme/protected-areas/about)
-
-Create an HTML document called assignment2.html that has the following features (80% of mark):
-- has a title (e.g. “Websites about Protected Areas Issues”) in H3 and a related image to create a banner at the top of the screen.
--	has an introductory paragraph on the topic and its importance in today’s world. 
--	displays a bulleted list of 6 hyperlinks to websites covering related issues and strategies. 
-  Make sure that each hyperlink listed is functional and it displays the chosen page of the selected website.
--	enhances the look of the web page with a background color. 
--	uses the Verdana (or another Sans Serif) font for the entire page.
--	includes in your document an HTML comment (embedded in your HTML code) showing your name and student number.
--	has a copyright line at the bottom of the page with your student info, 
-  assignment info, and credits to the websites from which you acquired pictures and information for your assignment.
--	centers the content of the web page in the browser window. 
-
-(20% of mark) You are encouraged to add additional features (e.g. additional pictures and text content, 
-colored fonts, horizontal rulers, graphics bullets, etc.) to further enhance the content and visual appeal 
-of assignment, according to your own creative skills.
-
+<!-- Research the topic of protected areas (conservation areas) around the world 
+     and create a webpage about this topic. (https://www.iucn.org/theme/protected-areas/about)
+     
+     Create an HTML document called assignment2.html that has the following features (80% of mark):
+     - has a title (e.g. “Websites about Protected Areas Issues”) in H3 and a related image to create a banner at the top of the screen.
+     -	has an introductory paragraph on the topic and its importance in today’s world. 
+     -	displays a bulleted list of 6 hyperlinks to websites covering related issues and strategies. 
+       Make sure that each hyperlink listed is functional and it displays the chosen page of the selected website.
+     -	enhances the look of the web page with a background color. 
+     -	uses the Verdana (or another Sans Serif) font for the entire page.
+     -	includes in your document an HTML comment (embedded in your HTML code) showing your name and student number.
+     -	has a copyright line at the bottom of the page with your student info, 
+       assignment info, and credits to the websites from which you acquired pictures and information for your assignment.
+     -	centers the content of the web page in the browser window. 
+     
+     (20% of mark) You are encouraged to add additional features (e.g. additional pictures and text content, 
+     colored fonts, horizontal rulers, graphics bullets, etc.) to further enhance the content and visual appeal 
+     of assignment, according to your own creative skills.
+     
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
-   <title> PLASTIC POLLUTIONS </title>
-    <!--BACKGROUND IMAGE, credit to: https://pixabay.com/photos/wilderness-mexico-national-sand-69389/-->
-   <style>
-     html {
-         background: url(background-a2.jpg) no-repeat center fixed;
-         background-size: cover; 
-        }
-     .banner {
-         margin-left: 10px;
-         margin-right: 10px;
-         text-align: center; 
-        }
-     body { 
-         text-align: center; 
-         font-family: Verdana; 
-        }
-     ul { 
-         list-style-position: inside; 
-        }
-     .margin {
-         margin-left: 20px;
-         margin-right: 20px; 
-        }
-     .listbox {
-         border: 2px outset #0000006a;
-         background-color: #ffffff82;
-         width: 980px;
-         display:inline-block 
-        }
-     .box {
-         background-color: #ffffff34;
-         width: 980px;
-         display:inline-block 
-        }
-     a.navig:link, a.navig:visited {
-        background-color: #818181d2;
-        color: rgb(0, 0, 0);
-        padding: 20px 100px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block; 
-      }
-     a.navig:hover, a.navig:active {
-          background-color: rgba(135, 137, 235, 0.561);
-          color:white 
-        }
-   </style>
- </head>
+<head>
+  <title> PLASTIC POLLUTIONS </title>
+   <!--BACKGROUND IMAGE, credit to: https://pixabay.com/photos/wilderness-mexico-national-sand-69389/-->
+  <link rel="stylesheet" href="a2-stylesheet.css">
+</head>
 
- <body>
+<body>
    <header>
-     <!--BANNER IMAGE: Credit to:  https://pixabay.com/photos/beach-sand-plastic-garbage-5697987/-->
-     <img class="banner" src="banner-a2.jpg" width="980" >
-     <h2>PLASTIC POLLUTIONS</h2>
+    <!--BANNER IMAGE: Credit to:  https://pixabay.com/photos/beach-sand-plastic-garbage-5697987/-->
+    <img class="banner" src="banner-a2.jpg" width="980" >
+    <h2>PLASTIC POLLUTIONS</h2>
    </header>
    
    <main> <!--INTRODUCTION PARAGRAPH-->
@@ -111,16 +65,16 @@ of assignment, according to your own creative skills.
    </main>
 
    <div class="listbox"> <!--HYPERLINKS-->
-    <div style="float:left; width: 50%;">
+    <div class="linktitle">
      <p><b>RESOURCES</b></p>
-       <ul type="circle" style="margin-left: 40px; text-align:left">
+       <ul>
         <li>Hyperlinks Tutorial from <a href="https://www.w3schools.com/html/html_links.asp"target="_blank">W3SCHOOL</a></li>
         <li>Bullet list in 2 columns from <a href="https://mattdanner.net/two-column-lists-using-html/"target="_blank">here</a></li>
         <li>Free images from <a href="https://pixabay.com/"target="_blank">pixabay</a></li>
       </ul></div>
-     <div style="float:right; width: 50%;">
+     <div class="linktitle">
        <p><b>LINKS</b></p>
-       <ul type="circle" style="margin-left: 40px; text-align:left">
+       <ul>
         <li>Research topic on <a href="https://www.iucn.org/search?thm=1149"target="_blank">IUCN</a></li>
         <li>Banner <a href="https://pixabay.com/photos/beach-sand-plastic-garbage-5697987/"target="_blank">IMAGE</a></li>
         <li>Background <a href="https://pixabay.com/photos/wilderness-mexico-national-sand-69389/"target="_blank">IMAGE</a></li>
@@ -131,16 +85,16 @@ of assignment, according to your own creative skills.
 
    <nav> <!--ASSIGNMENT NAVIGATION-->
     <div class="margin">
-      <hr style="border-style: solid; border-color:black; width:980px">
-      <h4>&#8592; <a href="index.html" class="navig">Go Back to Home Page</a></h4>
-      <hr style="border-style: solid; border-color:black; width:980px">
+      <hr>
+      <h4><a href="index.html" class="navig">Go Back to INDEX</a></h4>
+      <hr>
     </div>
    </nav>
 
    <footer> <!--COPYRIGHTED BY NAME, COURSE, SEMESTER-->
-       <h4 class="margin" style="color:black; font-family: 'Times New Roman';font-weight: lighter; margin-top: 5px;">&copy; Copyright by Henry Tin Le, Assignment 2, COMP213-011 - Fall 2022</h4>
+       <h4 class="foot">&copy; Copyright by Henry Tin Le, Assignment 2, COMP213-011 - Fall 2022</h4>
    </footer>
 
- </body>
+</body>
 
 </html>

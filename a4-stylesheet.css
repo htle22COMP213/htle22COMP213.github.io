@@ -1,0 +1,117 @@
+body{
+    text-align: center;
+    margin: auto;
+    padding: 0px 0px 5px 0px;
+    border: 0px solid transparent;
+    background-color: white;
+    width: 980px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+fieldset{
+    text-align: left;
+    border-radius: 15px 15px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.273);
+    margin: 10px 20px 50px 20px;
+}
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    background-color: rgb(38, 38, 38);
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:1px solid rgb(161, 161, 161);
+}
+input[type=reset]:hover{
+    background-color: rgb(128, 127, 127);
+    border-color: transparent;
+    color:white;
+}
+input[type=reset]{
+    width:90px;
+    height:30px;
+}
+input[type=submit]:hover{
+    background-color: rgb(128, 127, 127);
+    border-color: transparent;
+    color:white;
+}
+input[type=submit]{
+    width:90px;
+    height:30px;
+}
+input[type=text]:focus{
+    outline: none !important;
+    border:3px solid rgb(115, 115, 115);
+    box-shadow: 0px 0px 10px #80b2e7;
+    color:rgb(50, 50, 187);
+    font-size: medium;
+}
+footer{
+    color:rgb(106, 106, 106);
+}
+legend{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: larger;
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+textarea{
+    height:90px;
+    width: 600px;
+}
+textarea:focus{
+    outline: none !important;
+    border:3px solid rgb(115, 115, 115);
+    box-shadow: 0px 0px 10px #779dc6;
+    color:rgb(50, 50, 187);
+    font-size: large;
+}
+a.homepage:link, a.homepage:visited {
+    background-color: #bab9b9bc;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    padding: 20px 390px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a.homepage:hover, a.homepage:active {
+     background-color: rgb(77, 72, 95);
+     color:white
+}
+.alignment{
+    text-align: left; 
+    margin: 40px 40px 40px 40px;
+}
+.container{
+    position: relative;
+    text-align: right;
+}
+.redbox{
+    border:2px dashed red;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width:650px;
+    text-align: center;
+    font-size: medium;
+}
+.thankyou{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: 900;
+}
+.top-right{
+    position:absolute;
+    top: 25px;
+    right: 15px;
+    font-size: large;
+}

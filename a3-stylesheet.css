@@ -1,0 +1,80 @@
+body{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    background-color: black;
+}
+h1{
+    color:white;
+}
+h4{
+    color:white;
+    font-family: 'Times New Roman';
+    font-weight: lighter;
+    margin-top: 5px;
+}
+hr{
+    border-style: solid;
+    border-color:rgb(100, 100, 100);
+    border-width:1px; 
+    width:980px;
+}
+nav{
+    color:white;
+}
+table {
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:solid;
+    width: 980px;
+    font-family: sans-serif;
+    color: white;
+    border-collapse: collapse;
+}
+td{
+    border:2px solid white;
+}
+th{
+    border:2px solid white;
+    background-color:rgb(25, 26, 26)
+}
+td.firsttable{
+    text-align:left;
+    vertical-align:top;
+    padding:15px
+}
+td.secondtable{
+    text-align:left;
+    padding-left: 10px;
+}
+a:link, a:visited {
+    background-color: #424242;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: rgb(26, 25, 25);
+}
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #010101;
+    width: 980px;
+}
+.box2 {
+    border: 3px solid rgb(25, 26, 26);
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(25, 26, 26);
+    width: 980px;
+    font-family:'Times New Roman', Times, serif;
+    color:white
+}
+.box3 {
+    margin: auto;
+    background-color:white;
+    width: 980px;
+}

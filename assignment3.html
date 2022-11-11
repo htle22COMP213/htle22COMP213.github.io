@@ -31,64 +31,17 @@ and provide an “Assignment 3” hyperlink to it from your index page. Remember
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <title> Fujifilm X-T4 Camera</title>
-    <style>
-        body{
-          font-family:'Times New Roman', Times, serif;
-          background-color: black;
-        }
-        table {
-            margin-left: auto;
-            margin-right: auto;
-            border-style:solid;
-            width: 980px;
-            font-family: sans-serif;
-        }
-        .centered {
-            text-align: center;
-        }
-        .box {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #010101;
-            width: 980px;
-        }
-        a:link, a:visited {
-            background-color: #424242;
-            color: white;
-            padding: 15px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-        a:hover, a:active {
-            background-color: rgb(26, 25, 25);
-        }
-        .box2 {
-            border: 3px solid rgb(25, 26, 26);
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            background-color:rgb(25, 26, 26);
-            width: 980px;
-        }
-        .box3 {
-            text-align: center;
-            margin: auto;
-            background-color:white;
-            width: 980px;
-        }
-    </style>
-  </head>
+    <link rel="stylesheet" href="a3-stylesheet.css">
+</head>
 
-  <body>
+<body>
     <header class="box">
         <img src="Fujifilm logo.jpg" width="400">
     </header>
 
-    <nav style="color:white; text-align: center ;">
+    <nav>
       <a href="./index.html">Home Page</a>
       <a href="https://fujifilm-x.com/en-ca/">Fujifilm Official Site</a>
       <a href="https://fujifilm-x.com/en-ca/products/x-series/">Fujifilm X-Series Cameras</a>
@@ -96,11 +49,10 @@ and provide an “Assignment 3” hyperlink to it from your index page. Remember
     </nav>
 
     <main>
-      <h1 style="color:white; text-align: center;">Fujifilm X-T4 Digital Mirrorless Camera</h1>
+      <h1>Fujifilm X-T4 Digital Mirrorless Camera</h1>
       
-      <table border="2">
-        <tbody style="color:white" class="centered">
-          <tr style="background-color:rgb(25, 26, 26)">
+      <table>
+          <tr>
             <th style="width:40%">IMAGES</th>
             <th colspan="2">Description</th>
           </tr>
@@ -115,8 +67,8 @@ and provide an “Assignment 3” hyperlink to it from your index page. Remember
               <a href="./X-T4-BLK-TOP.jpg" target="_blank" width="100%"><img src="X-T4-BLK-TOP.jpg" width="50"></a>
             </td>
 
-            <td colspan="2"style="text-align:left; vertical-align:top; padding:15px">
-              <p style="text-align:center;" >BLACK VERSION</p>
+            <td colspan="2" class="firsttable">
+              <p style="text-align:center" >BLACK VERSION</p>
               <!--Description from Amazon  https://www.amazon.ca/Fujifilm-X-T4-Mirrorless-Camera-Body/dp/B084ZTV3QK?th=1-->
               <p>FUJIFILM X-T4 is a hybrid camera that uses cutting-edge technology to excel in creating both stills and motion 
                 imagery. Free yourself from compromise and be the image maker you’ve always wanted to be. With the fourth-generation 
@@ -146,23 +98,23 @@ and provide an “Assignment 3” hyperlink to it from your index page. Remember
               <img src="X-T4-SLV-FRONT.jpg" width="250">
               <a href="./details.html">View Larger Image</a>
             </td>
-            <td colspan="2" style="text-align:center">SILVER VERSION</td>
+            <td colspan="2">SILVER VERSION</td>
           </tr>
       </table><br>
  
-      <table border="1" style="color:white; text-align: center;">
-          <tr style="background-color:rgb(25, 26, 26)">
+      <table>
+          <tr>
             <th style="width:60%">OPTIONS</th>
             <th>PRICE</th>
           </tr>
-          <tr><td style="text-align:left; padding-left: 10px;">Amazon (Body Only)</td><td>$2,279.99</td></tr>
-          <tr><td style="text-align:left; padding-left: 10px;">Amazon (Body+Battery)</td><td>$2,392.11</td></tr>
-          <tr><td style="text-align:left; padding-left: 10px;">Amazon (with XF16-80mm Lens Kit)</td><td>$2,969.00</td></tr>
+          <tr><td class="secondtable">Amazon (Body Only)</td><td>$2,279.99</td></tr>
+          <tr><td class="secondtable">Amazon (Body+Battery)</td><td>$2,392.11</td></tr>
+          <tr><td class="secondtable">Amazon (with XF16-80mm Lens Kit)</td><td>$2,969.00</td></tr>
           <tr ><td colspan="2" style="text-align:center"><a href="https://www.amazon.ca/Fujifilm-X-T4-Mirrorless-Camera-Body/dp/B084ZTV3QK?th=1" target="_blank">Link to Amazon</a></td></tr>
       </table><br>
      
  
-      <div class="box2" style="font-family:'Times New Roman', Times, serif; color:white">
+      <div class="box2">
         <h2>Hotspots in Canada</h2>
       </div>
       <!--IMG MAP GENERATOR = https://www.image-map.net/-->
@@ -178,10 +130,10 @@ and provide an “Assignment 3” hyperlink to it from your index page. Remember
     </main>
 
      <footer>
-      <hr style="border-style: solid; border-color:rgb(100, 100, 100); border-width:1px; width:980px;">
-      <h4 class="centered" style="color:white; font-family: 'Times New Roman';font-weight: lighter; margin-top: 5px;">&copy; Copyright by Henry Tin Le, Assignment 3 - COMP213-011 (Fall 2022)</h4>
+      <hr>
+      <h4>&copy; Copyright by Henry Tin Le, Assignment 3 - COMP213-011 (Fall 2022)</h4>
      </footer>
   
-  </body>
+</body>
 
 </html>

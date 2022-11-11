@@ -1,0 +1,187 @@
+<!-- COMP213-011 (Assignment 4) -->
+<!-- Created By Henry Tin Le -->
+
+<!-- Implement an HTML document containing an online evaluation form for CE (Continuing Education) 
+     courses offered at a college. A screenshot of the scanned paper-based form can be seen on the 
+     following page. Make sure to ask the same type of questions even if you edit slightly the wording.
+     
+     You can modify the layout of the form.
+     
+     Create a banner (hint: use the header tag) containing a logo picture for the college and
+     hyperlink it to the college website (home page).
+     
+     Use colors of your choice on the form and harmonize them with the palette of the chosen
+     college website (hint: do not use a yellow background as in the scanned paper form).
+     
+     Do all the styling of your form using CSS rules saved in a separate .css style sheet.
+     Make sure the website and email addresses on the sample form are implemented as
+     hyperlinks that the user can interact with.-->
+     
+     <!--Hints for A4:
+         
+     Use radio buttons or a drop-down list for the survey questions (one choice out of four).
+     Radio buttons have the same name for a group.
+     Don't forget to add a submit and a reset button. Change the text on the buttons.
+     Use textarea for the comment fields.-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Centennial - Instructor Evaluation</title>
+<link rel="stylesheet" href="a4-stylesheet.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <img src="centennialcollege_logo.jpg" usemap="#image-map">
+        <map name="image-map">
+            <area target="" alt="Centennial Homepage" title="Centennial Homepage" href="https://www.centennialcollege.ca/" coords="337,200,0,1" shape="rect">
+        </map>
+        <div class="top-right"><h1>Continuing Education Course<br>Instructor Evaluation</h1></div>
+    </div>
+    </header>
+
+    <main>
+        <form>
+            <div class="redbox">
+            <p><b>Please read each statement carefully and consider each one individually.<br>Give only one answer for each question.</b></p>
+            </div>
+        
+            <div class="alignment">
+                <label for="coursenamecode"><b>Course Name/Code:</b></label>
+                    <input type="text" size="40" id="coursenamecode" name="coursenamecode">&emsp;
+                    <label for="semester"><b>Semester:</b></label>
+                    <select name="semester" id="semester">
+                        <option>Select--</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                        <option value="springsummer">Spring/Summer</option>
+                    </select>
+                    <label for="year"><b>&emsp;Year: </b></label>
+                    <input type="text" size="5" id="year">
+            </div>
+        
+            <fieldset>
+                <legend>INSTRUCTOR</legend>
+                    <p>How would you rate the instructor's:</p>
+                    <p>1. <b>knowledge</b> of subject?</p>
+                        <input type="radio" id="excellent" name="rate_knowledge">
+                        <label for="excellent">Excellent&ensp;</label>
+                        <input type="radio" id="good" name="rate_knowledge">
+                        <label for="good">Good&ensp;</label>
+                        <input type="radio" id="fair" name="rate_knowledge">
+                        <label for="fair">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory" name="rate_knowledge">
+                        <label for="notsatisfactory">Not Satisfactory</label>
+                    <p>2. <b>helpfulness?</b></p>
+                        <input type="radio" id="excellent2" name="rate_helpfulness">
+                        <label for="excellent2">Excellent&ensp;</label>
+                        <input type="radio" id="good2" name="rate_helpfulness">
+                        <label for="good2">Good&ensp;</label>
+                        <input type="radio" id="fair2" name="rate_helpfulness">
+                        <label for="fair2">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory2" name="rate_helpfulness">
+                        <label for="notsatisfactory2">Not Satisfactory</label>
+                    <p>3. <b>courtesty and respect</b> for all students?</p>
+                        <input type="radio" id="excellent3" name="rate_courtesyrespect">
+                        <label for="excellent3">Excellent&ensp;</label>
+                        <input type="radio" id="good3" name="rate_courtesyrespect">
+                        <label for="good3">Good&ensp;</label>
+                        <input type="radio" id="fair3" name="rate_courtesyrespect">
+                        <label for="fair3">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory3" name="rate_courtesyrespect">
+                        <label for="notsatisfactory3">Not Satisfactory</label>
+                    <p>4. <b>communication</b> skills?</p>
+                        <input type="radio" id="excellent4" name="rate_communicationskills">
+                        <label for="excellent4">Excellent&ensp;</label>
+                        <input type="radio" id="good4" name="rate_communicationskills">
+                        <label for="good4">Good&ensp;</label>
+                        <input type="radio" id="fair4" name="rate_communicationskills">
+                        <label for="fair4">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory4" name="rate_communicationskills">
+                        <label for="notsatisfactory4">Not Satisfactory</label>
+                    <p>5. overall <b>performance?</b></p>
+                        <input type="radio" id="excellent5" name="rate_overallperformance">
+                        <label for="excellent5">Excellent&ensp;</label>
+                        <input type="radio" id="good5" name="rate_overallperformance">
+                        <label for="good5">Good&ensp;</label>
+                        <input type="radio" id="fair5" name="rate_overallperformance">
+                        <label for="fair5">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory5" name="rate_overallperformance">
+                        <label for="notsatisfactory5">Not Satisfactory</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>COURSE</legend>
+                    <p>6. How would you rate the <b>course materials?</b></p>
+                        <input type="radio" id="excellent6" name="rate_coursematerial">
+                        <label for="excellent6">Excellent&ensp;</label>
+                        <input type="radio" id="good6" name="rate_coursematerial">
+                        <label for="good6">Good&ensp;</label>
+                        <input type="radio" id="fair6" name="rate_coursematerial">
+                        <label for="fair6">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory6" name="rate_coursematerial">
+                        <label for="notsatisfactory6">Not Satisfactory</label>
+                    <p>7. How much did this course meet your <b>expectations?</b></p>
+                        <input type="radio" id="excellent7" name="rate_expectation">
+                        <label for="excellent7">Excellent&ensp;</label>
+                        <input type="radio" id="good7" name="rate_expectation">
+                        <label for="good7">Good&ensp;</label>
+                        <input type="radio" id="fair7" name="rate_expectation">
+                        <label for="fair7">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory7" name="rate_expectation">
+                        <label for="notsatisfactory7">Not Satisfactory</label>
+                    <p>8. How would you rate this course (<b>overall</b>)?</p>
+                        <input type="radio" id="excellent8" name="rate_overall">
+                        <label for="excellent8">Excellent&ensp;</label>
+                        <input type="radio" id="good8" name="rate_overall">
+                        <label for="good8">Good&ensp;</label>
+                        <input type="radio" id="fair8" name="rate_overall">
+                        <label for="fair8">Fair&ensp;</label>
+                        <input type="radio" id="notsatisfactory8" name="rate_overall">
+                        <label for="notsatisfactory8">Not Satisfactory</label></p>
+            </fieldset>
+        
+            <fieldset>
+                <legend>GENERAL INFORMATION</legend>
+                    <p>9. Was the <b>course outline</b> reviewed/explained at the beginning of your course?</p>
+                        <input type="radio" id="yes1" name="courseoutline">
+                        <label for="yes1">Yes</label>
+                        <input type="radio" id="no1"  name="courseoutline">
+                        <label for="no1">No</label>
+                        <input type="radio" id="notsure1" name="courseoutline">
+                        <label for="notsure1">Not Sure</label>
+                    <p>10. Would you <b>recommend</b> this course to a friend with the same interests?</p>
+                        <input type="radio" id="yes2" name="recommend">
+                        <label for="yes2">Yes</label>
+                        <input type="radio" id="no2"  name="recommend">
+                        <label for="no2">No</label>
+                        <input type="radio" id="notsure2" name="recommend">
+                        <label for="notsure2">Not Sure</label><br></p>
+            </fieldset>
+        
+            <fieldset>
+                <legend>ANY OTHER COMMENTS</legend>
+                    <p><label for="bestthing">11. What is the <b>best thing</b> about this course?</label></p>
+                    <textarea id="bestthing" name="bestthing"></textarea><br>
+                    <p><label for="improve">12. How could we <b>improve</b> this course?</label></p>
+                    <textarea id="improve" name="improve"></textarea><br>
+                    <p><label for="other">13. Other:</label></p>
+                    <textarea id="other" name="other"></textarea></p>
+            </fieldset>
+            <input type="submit">&emsp;<input type="reset" >
+            <div class="thankyou"><p><em>Thank you! We pay attention to your feedback!</em></p></div>
+            <p><b>Web: </b><a href="https://www.centennialcollege.ca/about-centennial">www.centennialcollege.ca/about-centennial</a>&ensp;&ensp;
+            <b>Email: </b><a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+        </form>
+    </main>
+
+    <footer>
+    <hr>
+    <h4><a href="index.html" class="homepage">Back to INDEX</a></h4>
+    <hr>
+    <h4>&copy; Copyright by Henry Tin Le, Assignment 4, COMP213-011 - Fall 2022</h4>
+    </footer>
+</body>
+</html>
